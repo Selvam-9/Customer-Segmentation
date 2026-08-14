@@ -25,7 +25,7 @@ class DataIngestion:
     def initiate_data_ingestion(self):
         logging.info('Entered the data ingestion methos or component')
         try:
-           df = pd.read_csv(r'C:\Users\selvam.anandhan\OneDrive - IDP Education Ltd\Documents\DS\myproject\artifact\Mall_Customers.csv')
+           df = pd.read_csv(r'C:\Users\DS\myproject\artifact\Mall_Customers.csv')
            logging.info('Read the dataset as dataframe')
 
            os.makedirs(os.path.dirname(self.ingestion_config.raw_data_path),exist_ok=True)
